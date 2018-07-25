@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+<div class="divgrande">
+  <div class="movie" *ngFor="let movie of movies">
+    <h3>ROOM {{movie.room}}</h3>
+    <img class="list-img" [src]="movie.poster" alt="">
+    <h3>{{movie.title}}</h3>
+    <a [routerLink]= "['/movie', movie.id]" class="btn btn-primary">Movie</a>
+  </div>
+</div>
